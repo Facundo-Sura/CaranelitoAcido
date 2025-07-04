@@ -14,7 +14,11 @@ interface CardsProps {
 
 const Cards: React.FC<CardsProps> = ({ participants }) => {
   return (
-    <div></div>
+    <div>
+      {participants.map((participant) => (
+        <ParticipantCard key={participant.name} {...participant} />
+      ))}
+    </div>
   )
 };
 
