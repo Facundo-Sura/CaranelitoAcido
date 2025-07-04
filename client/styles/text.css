@@ -1,0 +1,10 @@
+:root {
+    --shine-text: 0 0 10px white,
+    0 0 20px white,
+    0 0 40px white,
+    0 0 80px white;
+}
+
+h2 {
+    text-shadow: var(--shine-text);
+}
